@@ -12,7 +12,7 @@ const Navbar = () => {
   if (withouSidebarRoutes.some((item) => pathname.includes(item))) return null;
   return(
   <Stack direction="row" alignItems="center" p={2}  spacing={60} sx={{ position:  "sticky", background: '#000', top: 0 }}>
-    <Link to="/" style={{ display: "flex", alignItems: "center" }}>
+    <Link to="/home" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} />
     </Link>
     <SearchBar />
